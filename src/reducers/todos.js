@@ -1,7 +1,7 @@
 import { List, Map } from 'immutable';
 import * as ActionTypes from '../constants/ActionTypes.js';
 
-const initialState = List([Map({text: 'my first todo', completed: false}), Map({text: 'my second todo', completed: false})]);
+const initialState = List([Map({ text: 'my first todo', completed: false }), Map( { text: 'my second todo', completed: false } )]);
 
 export function todos(state = initialState, action = null) {
   const { type, payload } = action;
